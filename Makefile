@@ -1,5 +1,5 @@
 default: 
 	git pull
 	terraform init 
-	terraform plan -auto-approve -var token=$(token)
+	terraform plan 
 	terraform apply -auto-approve -var token=$(token)
