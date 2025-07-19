@@ -7,7 +7,7 @@ resource "vault_mount" "secrets-mount" {
     description = each.value["description"]
 }
 
-resource "vault_kv_secret" "secrets" {
+resource "vault_kv_secret_v2" "secrets" {
   for_each        = var.secrets
   mount           = each.value.secret_mount
   name            = each.key
