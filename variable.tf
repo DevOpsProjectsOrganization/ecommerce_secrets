@@ -7,3 +7,13 @@ variable "secrets-mount" {
         }
     }
 }
+variable "secrets" {
+    default = {
+        cart-secret ={
+            secret_mount    = "roboshop-dev"
+            kv              = {
+                "key" ="value"
+            }
+        }
+    }
+}
