@@ -12,6 +12,5 @@ resource "vault_kv_secret" "secrets" {
   mount           = each.value["secret_mount"]
   name            = each.key
   cas             = true
-  path            = "${vault_mount.kvv1.path}/secret-mount"
   data_json       = each.value["kv"]
 }
