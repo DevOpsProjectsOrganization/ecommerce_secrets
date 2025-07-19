@@ -11,6 +11,5 @@ resource "vault_kv_secret" "secrets" {
   for_each        = var.secrets
   mount           = each.value["secret_mount"]
   name            = each.key
-  cas             = true
   data_json       = each.value["kv"]
 }
