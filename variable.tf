@@ -9,10 +9,12 @@ variable "secrets-mount" {
 }
 variable "secrets" {
     default = {
-        cart-secret ={
+        cart ={
             secret_mount    = "roboshop-dev"
             kv              = {
-                "key" ="value"
+                "REDIS_HOST"    ="redis-dev.sdevops.shop",
+                "CATALOGUE_HOST"="catalogue-dev.sdevops.shop",
+                "CATALOGUE_PORT" = "8080"
             }
         }
     }
