@@ -45,18 +45,18 @@ variable "secrets" {
             secret_mount    = "roboshop-dev"
             kv              = {
                 CART_HOST   = "cart-dev.sdevops.shop",
-                CART_PORT   =  "8080".
+                CART_PORT   =  "8080",
                 USER_HOST   = "user-dev.sdevops.shop",
                 USER_PORT   = "8080",
                 AMQP_HOST   = "rabbitmq-dev.sdevops.shop",
-                AMQP_USER   ="roboshop"
+                AMQP_USER   ="roboshop",
                 AMQP_PASS   = "roboshop123"
             }
         }
         shipping = {
             secret_mount    = "roboshop-dev"
             kv              = {
-                CART_ENDPOINT   = "cart-dev.sdevops.shop:8080"
+                CART_ENDPOINT   = "cart-dev.sdevops.shop:8080",
                 DB_HOST         = "mysql-dev.sdevops.shop"
             }
         }
@@ -77,7 +77,7 @@ variable "secrets" {
          rabbitmq   = {
             secret_mount    = "roboshop-dev"
             kv              = {
-                ROOT_USER      = "roboshop"
+                ROOT_USER      = "roboshop",
                 ROOT_PASSWORD = "roboshop123"
             }
         }
