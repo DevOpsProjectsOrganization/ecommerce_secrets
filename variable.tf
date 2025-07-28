@@ -20,7 +20,7 @@ variable "secrets" {
         catalogue ={
             secret_mount    = "roboshop-dev"
             kv              = {
-                "MONGO_URL"    ="mongodb-dev.sdevops.shop"
+                "MONGO_URL"    ="mongodb://mongodb-dev.sdevops.shop:27017/catalogue"
             }
         }
         dispatch = {
