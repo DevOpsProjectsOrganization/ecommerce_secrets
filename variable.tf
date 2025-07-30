@@ -34,11 +34,11 @@ variable "secrets" {
         frontend = {
             secret_mount    = "roboshop-dev"
             kv              = {
-                CATALOGUE_URL   = "http://catalogue-dev.sdevops.shop:8080",
-                USER_URL        = "http://user-dev.sdevops.shop:8080",
-                CART_URL        = "http://cart-dev.sdevops.shop:8080",
-                SHIPPING_URL    = "http://shipping-dev.sdevops.shop:8080",
-                PAYMENT_URL     = "http://payment-dev.sdevops.shop:8080"
+                CATALOGUE_URL   = "http://catalogue-dev.sdevops.shop:8080/",
+                USER_URL        = "http://user-dev.sdevops.shop:8080/",
+                CART_URL        = "http://cart-dev.sdevops.shop:8080/",
+                SHIPPING_URL    = "http://shipping-dev.sdevops.shop:8080/",
+                PAYMENT_URL     = "http://payment-dev.sdevops.shop:8080/"
             }
         }
         payment = {
