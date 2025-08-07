@@ -20,6 +20,7 @@ variable "secrets" {
         catalogue ={
             secret_mount    = "roboshop-dev"
             kv              = {
+                "MONGO"        = true
                 "MONGO_URL"    ="mongodb://mongodb-dev.sdevops.shop:27017/catalogue"
             }
         }
@@ -35,10 +36,15 @@ variable "secrets" {
             secret_mount    = "roboshop-dev"
             kv              = {
                 CATALOGUE_URL   = "http://catalogue-dev.sdevops.shop:8080/",
+                CATALOGUE_PORT  = "8080",
                 USER_URL        = "http://user-dev.sdevops.shop:8080/",
+                USER_PORT       = "8080",
                 CART_URL        = "http://cart-dev.sdevops.shop:8080/",
+                CART_PORT       = "8080",
                 SHIPPING_URL    = "http://shipping-dev.sdevops.shop:8080/",
-                PAYMENT_URL     = "http://payment-dev.sdevops.shop:8080/"
+                SHIPPING_PORT   = "8080",
+                PAYMENT_URL     = "http://payment-dev.sdevops.shop:8080/",
+                PAYMENT_PORT    = "8080",
             }
         }
         payment = {
