@@ -21,7 +21,11 @@ variable "secrets" {
             secret_mount    = "roboshop-dev"
             kv              = {
                 "MONGO"        = "true"
-                "MONGO_URL"    = "mongodb://mongodb-dev.sdevops.shop:27017/catalogue"
+                "MONGO_URL"    = "mongodb://mongodb-dev.sdevops.shop:27017/catalogue",
+                "DB_TYPE"       = "mongo",
+                "APP_GIT_URL"   = "https://github.com/roboshop-devops-project-v3/catalogue",
+                "DB_HOST"       = "mongodb-dev.sdevops.shop"
+                "SCHEMA_FILE"   = "db/master-data.js"
             }
         }
         dispatch = {
@@ -63,7 +67,11 @@ variable "secrets" {
             secret_mount    = "roboshop-dev"
             kv              = {
                 CART_ENDPOINT   = "cart-dev.sdevops.shop:8080",
-                DB_HOST         = "mysql-dev.sdevops.shop"
+                DB_HOST         = "mysql-dev.sdevops.shop",
+                DB_TYPE         = "mysql",
+                APP_GIT_URL     = "https://github.com/roboshop-devops-project-v3/shipping",
+                DB_USER         = "root",
+                DB_PASS         = "RoboShop@1",   
             }
         }
         user    = {
