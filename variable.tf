@@ -39,15 +39,15 @@ variable "secrets" {
         frontend = {
             secret_mount    = "roboshop-dev"
             kv              = {
-                CATALOGUE_HOST   = "http://catalogue-dev.sdevops.shop:8080/",
+                CATALOGUE_HOST   = "http://catalogue-dev.sdevops.shop",
                 CATALOGUE_PORT   = "8080",
-                USER_HOST        = "http://user-dev.sdevops.shop:8080/",
+                USER_HOST        = "http://user-dev.sdevops.shop",
                 USER_PORT        = "8080",
-                CART_HOST        = "http://cart-dev.sdevops.shop:8080/",
+                CART_HOST        = "http://cart-dev.sdevops.shop",
                 CART_PORT        = "8080",
-                SHIPPING_HOST    = "http://shipping-dev.sdevops.shop:8080/",
+                SHIPPING_HOST    = "http://shipping-dev.sdevops.shop",
                 SHIPPING_PORT    = "8080",
-                PAYMENT_HOST     = "http://payment-dev.sdevops.shop:8080/",
+                PAYMENT_HOST     = "http://payment-dev.sdevops.shop",
                 PAYMENT_PORT     = "8080",
             }
         }
