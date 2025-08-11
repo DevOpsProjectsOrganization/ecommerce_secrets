@@ -49,11 +49,18 @@ variable "secrets" {
                 SHIPPING_PORT    = "8080",
                 PAYMENT_HOST     = "http://payment-dev.sdevops.shop",
                 PAYMENT_PORT     = "8080",
-                CATALOGUE_URL    = "catalogue-dev.sdevops.shop:8080",
-                USER_URL         = "user-dev.sdevops.shop:8080",
-                CART_URL         = "cart-dev.sdevops.shop:8080",
-                SHIPPING_URL     = "shipping-dev.sdevops.shop:8080",
-                PAYMENT_URL      = "payment-dev.sdevops.shop:8080"
+                #CATALOGUE_URL    = "catalogue-dev.sdevops.shop:8080",
+                #USER_URL         = "user-dev.sdevops.shop:8080",
+                #CART_URL         = "cart-dev.sdevops.shop:8080",
+                #SHIPPING_URL     = "shipping-dev.sdevops.shop:8080",
+                #PAYMENT_URL      = "payment-dev.sdevops.shop:8080"
+
+                CATALOGUE_URL    = "172.31.18.246:8080",
+                USER_URL         = "172.31.30.64:8080",
+                CART_URL         = "172.31.27.140:8080",
+                SHIPPING_URL     = "172.31.27.113:8080",
+                PAYMENT_URL      = "172.31.22.146:8080"
+
             }
         }
         payment = {
