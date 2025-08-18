@@ -12,9 +12,9 @@ variable "secrets" {
         cart ={
             secret_mount    = "roboshop-dev"
             kv              = {
-                "REDIS_HOST"    ="redis-dev.sdevops.shop",
-                "CATALOGUE_HOST"="catalogue-dev.sdevops.shop",
-                "CATALOGUE_PORT" = "8080"
+                REDIS_HOST    ="redis-dev.sdevops.shop",
+                CATALOGUE_HOST="catalogue-dev.sdevops.shop",
+                CATALOGUE_PORT= "8080"
             }
         }
         catalogue ={
@@ -54,12 +54,6 @@ variable "secrets" {
                 CART_URL         = "http://cart-dev.sdevops.shop:8080",
                 SHIPPING_URL     = "http://shipping-dev.sdevops.shop:8080",
                 PAYMENT_URL      = "http://payment-dev.sdevops.shop:8080"
-
-                #CATALOGUE_URL    = "172.31.18.246:8080",
-                #USER_URL         = "172.31.30.64:8080",
-                #CART_URL         = "172.31.27.140:8080",
-                #SHIPPING_URL     = "172.31.27.113:8080",
-                #PAYMENT_URL      = "172.31.22.146:8080"
 
             }
         }
