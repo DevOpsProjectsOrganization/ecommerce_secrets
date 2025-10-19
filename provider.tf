@@ -1,5 +1,5 @@
 provider "vault" {
-    address = "http://54.234.13.58:8200"
+    address = "http://vault-internal.sdevops.shop:8200"
     token  = var.token
 }
 # add the s3 bucket tool
