@@ -13,7 +13,7 @@ variable "secrets" {
             secret_mount    = "roboshop-dev"
             kv              = {
                 REDIS_HOST    ="redis-dev.sdevops.shop",
-                CATALOGUE_HOST="catalogue-dev.sdevops.shop",
+                CATALOGUE_HOST="catalogue",
                 CATALOGUE_PORT= "8080"
             }
         }
@@ -39,15 +39,15 @@ variable "secrets" {
         frontend = {
             secret_mount    = "roboshop-dev"
             kv              = {
-                CATALOGUE_HOST   = "catalogue-dev.sdevops.shop",
+                CATALOGUE_HOST   = "catalogue",
                 CATALOGUE_PORT   = "8080",
-                USER_HOST        = "user-dev.sdevops.shop",
+                USER_HOST        = "user",
                 USER_PORT        = "8080",
-                CART_HOST        = "cart-dev.sdevops.shop",
+                CART_HOST        = "cart",
                 CART_PORT        = "8080",
-                SHIPPING_HOST    = "shipping-dev.sdevops.shop",
+                SHIPPING_HOST    = "shipping",
                 SHIPPING_PORT    = "8080",
-                PAYMENT_HOST     = "payment-dev.sdevops.shop",
+                PAYMENT_HOST     = "payment",
                 PAYMENT_PORT     = "8080",
                 CATALOGUE_URL    = "http://catalogue-dev.sdevops.shop:8080",
                 USER_URL         = "http://user-dev.sdevops.shop:8080",
@@ -60,9 +60,9 @@ variable "secrets" {
         payment = {
             secret_mount    = "roboshop-dev"
             kv              = {
-                CART_HOST   = "cart-dev.sdevops.shop",
+                CART_HOST   = "cart",
                 CART_PORT   =  "8080",
-                USER_HOST   = "user-dev.sdevops.shop",
+                USER_HOST   = "user",
                 USER_PORT   = "8080",
                 AMQP_HOST   = "rabbitmq-dev.sdevops.shop",
                 AMQP_USER   ="roboshop",
