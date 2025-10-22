@@ -8,6 +8,7 @@ resource "vault_mount" "secrets-mount" {
 }
 
 resource "vault_kv_secret_v2" "secrets" {
+  depends_on      = [vault_mount.secrets-mount]
   for_each        = var.secrets
   mount           = each.value.secret_mount
   name            = each.key
