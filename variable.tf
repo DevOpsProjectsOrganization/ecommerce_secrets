@@ -5,6 +5,10 @@ variable "secrets-mount" {
         roboshop-dev ={
             description = "secrets for roboshop"
         }
+        roboshop-infra = {
+            description = "secrets for infra"
+        
+        }
     }
 }
 variable "secrets" {
@@ -99,6 +103,13 @@ variable "secrets" {
             kv              = {
                 ROOT_USER      = "roboshop",
                 ROOT_PASSWORD = "roboshop123"
+            }
+        }
+        elk = {
+            secret_mount    = "roboshop-infra"
+            kv              = {
+                username = "elastic"
+                password = ""
             }
         }
     }
